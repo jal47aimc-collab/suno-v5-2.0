@@ -2294,3 +2294,342 @@ Use square brackets [ ] to guide the AI:
 • Modular blocks instead of strict linear flow.
 • Twist Loop = write sections as modular blocks; they can be mixed, re-ordered, or looped to create variety without rewriting. Useful for modular rap cyphers and for reshaping metal/hard-rock sections.
 
+
+# Scripture Music Master Document (V5-Ready Placeholder Edition)
+
+---
+
+## Introduction
+
+This document defines the modular framework for scripture-based music generation using placeholder logic. It is designed for integration with Suno AI and future metadata libraries, including 90s underground rap sonic vocabularies. All examples use placeholders to support flexible reuse and dynamic metadata injection. No references to vinyl crackle or tape hiss are included.
+
+---
+
+## Metadata Placement Standards
+
+### Tempo Declaration Logic
+
+- If the song maintains a single consistent tempo, declare `bpm:` in the top-level `[studio: ...]` block.
+- If the song includes tempo changes, omit `bpm:` from the top-level block and declare `tempo:` inside each song section.
+
+### Key, Groove, Theory, and FX
+
+- These may be declared globally in the `[studio: ...]` block if consistent.
+- Otherwise, define them per section using placeholders.
+
+---
+
+## Section Labeling Rules
+
+- All song sections must begin with a lowercase bracketed tag.
+- Examples: `[v1: ...]`, `[hook1: ...]`, `[narration1: ...]`
+- Do not use `Verse 1`, `Hook`, or other non-bracketed labels.
+
+---
+
+## Placeholder Syntax Guide
+
+Use the following format for all metadata fields:
+
+- `placeholder_voice`
+- `placeholder_tempo`
+- `placeholder_key`
+- `placeholder_groove`
+- `placeholder_theory`
+- `placeholder_fx`
+- `placeholder_sonic_1`, `placeholder_sonic_2`
+- `placeholder_persona`
+
+---
+
+## Song Section Template Format
+
+Each section follows this structure:
+
+```
+[section_label: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+```
+
+---
+
+## Stylebox and Sonic Token Framework
+
+Approved sonic token categories (to be populated by external libraries):
+
+- `dusty_eq`
+- `analog_preamp`
+- `crushed_bit_sub`
+- `boom_bap_slap`
+- `warm_rhodes`
+- `tape_delay_warm`
+- `lofi_lp`
+- `room_plate`
+- `vinyl-free_scratch`
+
+Stylebox examples:
+
+```
+stylebox: early90s_gritty -> dusty_eq;analog_preamp;boom_bap_slap;vinyl-free_scratch
+```
+
+---
+
+## Metadata Library Reference Table
+
+| Category         | Placeholder Format           |
+|------------------|------------------------------|
+| Voice Type       | `placeholder_voice`          |
+| Sonic Texture    | `placeholder_sonic_1`, `placeholder_sonic_2` |
+| Music Theory     | `placeholder_theory`         |
+| Groove Type      | `placeholder_groove`         |
+| FX / Ambience    | `placeholder_fx`             |
+| Instrumentation  | `placeholder_instrument`     |
+| Persona Info     | `placeholder_persona`        |
+
+---
+
+## Example Song Skeleton
+
+```
+[studio: placeholder_studio; genre: placeholder_genre; bpm: placeholder_bpm; key: placeholder_key; version: V5-ready]
+
+[v1: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+[hook1: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+[narration1: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+[v2: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+[outro: voice: placeholder_voice; tempo: placeholder_tempo; key: placeholder_key; theory: placeholder_theory; groove: placeholder_groove; sonic: placeholder_sonic_1;placeholder_sonic_2; fx: placeholder_fx; persona info: placeholder_persona]
+Insert lyrics here
+
+```
+
+---
+
+## Studio Header Template
+
+```
+[studio: placeholder_studio; genre: placeholder_genre; bpm: placeholder_bpm; key: placeholder_key; version: V5-ready]
+```
+
+If tempo varies across sections, omit `bpm:` and declare `tempo:` per section.
+
+---
+
+## Versioning and Update Notes
+
+- Use `version:` field to track prompt and metadata evolution.
+- Maintain changelogs for persona updates, sonic token additions, and stylebox refinements.
+- External libraries (e.g., 90s underground RAP) should be documented separately and referenced via token sets.
+
+---
+
+### Master Metadata Document — Song Metadata Standard
+
+### Purpose
+Define a single authoritative metadata standard for scripture-to-song outputs. Enforce one-bracket-per-section explicit metadata, a normalized vocabulary, and production rules so LLMs and downstream generators produce consistent, repeatable results.
+
+---
+
+### Studio Registry and Genre Tokens
+
+#### Studio Registry
+- **Clear Track Studios — Clearwater FL**
+
+#### Genre Tokens
+- **scripture cipher** — literal scripture text set to music  
+- **militant boom-bap** — aggressive boom-bap production with militant rhythmic emphasis
+
+---
+
+### Top-level song header (one bracket pair only)
+[studio: <studio name or neutral preset>; genre: <genre>; persona info: <none|persona>; default meter: <4/4>; stylebox: <stylebox tokens>; no_tape_hiss|allow_vinyl_crackle; production_notes: <short free-text only>; key: <key>; bpm: <BPM>; verses: <range optional>]
+
+Rules
+- Appears once at the top of each song file.
+- Free-text limited to production_notes only.
+- Studio must use a registered studio slug when available; use studio registry for canonical names.
+
+---
+
+### Section metadata (single-bracket explicit metadata rule)
+All metadata for a section must be inside one bracket pair at the start of the section. The first field MUST be the section_label.
+
+[section_label: <intro|narration1|v1|v2|hook1|bridge|outro>; voice: <raw_flow|spoken|theatric_deep|sing_vocal|choral|elder_speaker|gritty_testimony_voice|smooth_sermon_voice|urgent_prophet_voice|elder_wisdom_voice|echoed_prayer_voice>; bars: min–max; tempo: <BPM>; key: <Key>; theory: <controlled_theory_token>; groove: <descriptor>; cadence: 1|3; insert_anchor: <kick|snare|kick_on_1_snare_on_3|sub_swell|low_bass_hum>; loop_friendly: yes|no; sonic: <primary;secondary;fx>; fx: <short list>; persona info: <none|persona_token>; stylebox: <stylebox tokens>]
+
+Required fields
+- **section_label** (first)  
+- **voice** (explicit)  
+- **bars**  
+- **tempo** or inherit from song top if not provided  
+- **sonic** (must include primary;secondary;fx)
+
+Prohibitions
+- No extra bracket pairs for the same section.
+- No informal placeholders like hint, token, ish.
+- No production free-text inside section metadata; production_notes only at song top.
+
+Examples
+- Correct:  
+  [v2: voice: gritty_testimony_voice; bars: 10–16; tempo: 78; key: A minor; theory: modal_minor_gospel; groove: boom_bap_slap; cadence: 3; insert_anchor: kick_on_1_snare_on_3; loop_friendly: yes; sonic: sub_bass_foundation;warm_rhodes;cinematic_echo_trail; fx: tape_delay_warm; persona info: jal_the_messenger; stylebox: early90s_gritty;no_tape_hiss]
+- Incorrect:  
+  [V2: verses 6–13; tempo: 78; theory: dorian_hint; groove: half_time_groove]
+
+---
+
+### Narration rules
+- Use narration sections where the KJV text supplies scene-setting or stage direction.
+- Section label format: narration1, narration2, etc. Narration always precedes the musical section that follows.
+- Default voice for narration: elder_wisdom_voice or theatric_deep depending on file; include insert_anchor such as low_bass_hum and a short sonic cue.
+- Keep narration short (1–4 lines) unless explicitly requested as extended spoken-song.
+
+Example
+[narration1: voice: elder_wisdom_voice; bars: 2–4; tempo: 86; key: A minor; theory: none; groove: spoken_pulse; cadence: 1; insert_anchor: low_bass_hum; loop_friendly: yes; sonic: ambient_pad_layer;low_bass_hum;fx: room_plate; persona info: none; stylebox: spiritual_lofi;no_tape_hiss]
+
+---
+
+### Core Token Libraries
+
+#### Voice Types
+- **gritty_testimony_voice** — coarse, urgent spoken delivery  
+- **smooth_sermon_voice** — warm, melodic spoken or sung delivery  
+- **urgent_prophet_voice** — high-intensity prophetic delivery  
+- **elder_wisdom_voice** — calm, authoritative narration  
+- **echoed_prayer_voice** — ambient, reverbed spoken delivery
+
+#### Groove Types
+- **boom_bap_slap** — 78–95 BPM  
+- **swing_testify** — 80–100 BPM  
+- **steady_march_gospel** — 70–90 BPM  
+- **triplet_flow_walk** — 68–92 BPM
+
+#### Sonic Textures
+- **dusty_eq** — tonal shaping, low-mid warmth  
+- **analog_preamp** — harmonic saturation  
+- **crushed_bit_sub** — aggressive sub harmonic shaping  
+- **warm_rhodes** — melodic pad or comping  
+- **lofi_lp** — low-pass ambience  
+- **ambient_pad_layer** — widescreen pad bed  
+- **filtered_mono_pad** — mono filtered pad for focus  
+- **vinyl-free_scratch** — percussive scratch without vinyl artifacts
+
+#### FX and Ambience
+- **cinematic_echo_trail** — long cinematic echoes for emphasis  
+- **tape_delay_warm** — vintage style repeats  
+- **room_plate** — short room-to-plate ambience  
+- **reverb_tail** — sustain reverb for closes  
+- **record_needle_drop** — intro cue  
+- **heavenly_reverb_cloud** — lush, high-density reverb bloom  
+- **low_pass_confession** — muffled low-pass effect for intimate lines  
+- **echoed_valley_fx** — wide stereo echo for distance
+
+#### Music Theory Tokens
+- **modal_minor_gospel** — modal minor progressions with gospel influence  
+- **pentatonic_praise** — pentatonic-based harmony for hooks  
+- **tritone_tension_release** — tension-building harmonic device
+
+#### Instrumentation Tokens
+- **sub_bass_foundation** — low-end support  
+- **low-end_bass_expansion** — expanded low-frequency content  
+- **mournful_brass_pad** — sustained brass color  
+- **clean_guitar_loop** — rhythmic melodic loop
+
+#### Persona Tokens
+- **john_the_witness** — first-person witness persona  
+- **david_in_distress** — lamenting psalm persona  
+- **infinite_the_ai_dj** — AI DJ narrator persona  
+- **jal_the_messenger** — MC persona for direct delivery
+
+#### Stylebox Presets
+- **early90s_gritty** -> dusty_eq;analog_preamp;boom_bap_slap;vinyl-free_scratch  
+- **spiritual_lofi** -> warm_rhodes;room_plate;lofi_lp;sub_bass_foundation  
+- **AI_sermon** -> filtered_mono_pad;analog_preamp;modal_minor_gospel;cinematic_echo_trail
+
+---
+
+### Controlled vocabulary and extension process
+Theory examples: modal_minor_gospel; pentatonic_praise; tritone_tension_release; dorian; major_pedal; minor_pedal  
+Groove examples: boom_bap_slap; swing_testify; steady_march_gospel; triplet_flow_walk  
+Voice examples: gritty_testimony_voice; smooth_sermon_voice; urgent_prophet_voice; elder_wisdom_voice; echoed_prayer_voice  
+Stylebox tokens: early90s_gritty; spiritual_lofi; AI_sermon; no_tape_hiss; allow_vinyl_crackle  
+Insert anchors: kick; snare; kick_on_1_snare_on_3; sub_swell; low_bass_hum  
+Sonic fields: primary;secondary;fx (examples) — sub_bass_foundation; warm_rhodes; dusty_eq; tight_snare; ambient_pad_layer  
+Cadence: 1 or 3  
+Loop_friendly: yes or no
+
+Vocabulary change process
+- All additions must come through a documented change request with examples and mapping tests.
+
+---
+
+### Metadata Placeholders
+Use these exact placeholder labels for programmatic replacement in templates:
+- placeholder_voice  
+- placeholder_tempo  
+- placeholder_bpm  
+- placeholder_key  
+- placeholder_groove  
+- placeholder_theory  
+- placeholder_fx  
+- placeholder_sonic_1 placeholder_sonic_2  
+- placeholder_persona  
+- placeholder_studio  
+- placeholder_genre  
+- placeholder_instrument  
+- scent_pad
+
+---
+
+### Song-level rules and verse-range tracking
+- Verse ranges are tracked only at the song-level header: use verses: 1–17 in top bracket when desired.
+- Favor studio-level declarations for key, groove, theory, fx, and bpm when consistent; declare per-section when they change.
+- Sections reference bars and must be split so bar counts match the studio arrangement.
+
+---
+
+### Logic Rules and Best Practices
+- **Studio-level tempo** Declare a single steady tempo using bpm in the top-level studio header when tempo is consistent across the entire song.
+- **Per-section tempo** If tempo varies, remove bpm from the studio header and declare tempo inside each section.
+- **Global metadata** Declare key, groove, theory, and fx in the studio header when consistent; declare them per-section when they change.
+- **Section tags** All sections must start with a lowercase bracketed tag: intro, narration1, v1, hook1, outro, etc.
+- **Literal scripture default** Sections should contain verbatim KJV scripture for the selected chapter unless the producer explicitly requests non-scripture inserts. Non-scripture must be flagged and stored as separate template variants.
+- **Narration usage** Use narrationX for spoken, expository, or free-tempo passages; use vX for scripture lines that map to rhythmic phrasing.
+- **Character economy** Favor studio-level declarations to reduce per-section header size and preserve space for tokens like scent_pad.
+- **Stylebox application** Apply a stylebox preset at the studio or section level by listing its tokens inline; stylebox tokens are semicolon-delimited.
+- **Token stacking** Stack sonic and FX tokens separated by semicolons inside the sonic: field; avoid invented words inside token lists unless explicitly approved.
+- **Persona consistency** Assign a persona token for the overall song and override if a section calls for a different narrative POV.
+- **Exclusions** By default, **no_tape_hiss** is enforced in styleboxes unless allow_vinyl_crackle is explicitly present.
+
+---
+
+### Enforcement and automation
+- Add a metadata linter to validate:
+  - One bracket pair per section at start only.
+  - Required fields present.
+  - Controlled vocabulary only.
+  - No forbidden words (hint, token, ish, etc.).
+- Integrate linter into pre-commit/CI so malformed files are rejected.
+- Provide a one-click template generator and a one-page cheat sheet for contributors.
+
+---
+
+### Examples copy-paste ready
+
+Song top example:
+[studio: Clear Track Studios, Clearwater FL; genre: scripture cipher; persona info: john_the_witness; default meter: 4/4; stylebox: early90s_gritty; no_tape_hiss; production_notes: high-fidelity; key: A minor; bpm: 86; verses: 1–17]
+
+Narration + section example:
+[narration1: voice: elder_wisdom_voice; bars: 2–4; tempo: 86; key: A minor; theory: none; groove: spoken_pulse; cadence: 1; insert_anchor: low_bass_hum; loop_friendly: yes; sonic: ambient_pad_layer;low_bass_hum;fx: room_plate; persona info: none; stylebox: spiritual_lofi;no_tape_hiss]  
+And seeing the multitudes, he went up into a mountain: and when he was set, his disciples came unto him:  
+[v1: voice: gritty_testimony_voice; bars: 8–12; tempo: 78; key: A minor; theory: modal_minor_gospel; groove: boom_bap_slap; cadence: 1; insert_anchor: kick; loop_friendly: yes; sonic: sub_bass_foundation;warm_rhodes;fx: cinematic_echo_trail; persona info: jal_the_messenger; stylebox: early90s_gritty;no_tape_hiss]  
+Blessed are the poor in spirit: for theirs is the kingdom of heaven.
+
+---
