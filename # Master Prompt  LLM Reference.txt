@@ -828,3 +828,102 @@ Be Specific, highlighting something, Experiment 
 Connect Emotions: "Triumph born from despair"
 Token limits - xxx/200
 
+
+[Production Standards Update Pack]
+
+Majestic Sentence
+- Always at the top of the track.  
+- 1000 Characters or less. 
+- Written as prose, no brackets.  
+
+Studio Metadata (real only)
+- Must use a real, established studio (U.S. or international).  
+- Format:  
+  [Studio Name, City State/Country] [genre + style tags]  
+  [Recorded at Studio Name, City State/Country]  
+  [production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]  
+- No fictional studios.  
+- No artist/producer persona names (J.A.L, DJ Infinite, etc.) in metadata.  
+- Metadata is only for established sounds, real studios, and factual notes.  
+
+Section Format
+- Each section begins with metadata inside brackets.  
+- Lyrics come directly after metadata in a text block.  
+- One blank line between sections.  
+- Example:  
+  [Verse 1:rap:boom-bap drums, gritty bassline, vinyl crackle]  
+  Truth from the KJV, cut sharper than a blade  
+  Still walking unafraid, world trembling, I stay  
+
+Sound Design & Accents
+- All sound effects, scratches, drum cues, and FX must remain inside brackets.  
+- Nothing outside brackets unless it is meant to be spoken/sung.  
+- Example:  
+  [Intro:djsounds:vinyl crackle, record scratches, clock-tick echo, cosmic reverb wash]  
+
+Lyrics vs Metadata Separation
+- Lyrics = outside brackets.  
+- Metadata = inside brackets.  
+- If it’s not meant to be pronounced, it stays in brackets.  
+
+Element-Matching FX (Optional)
+- DJ scratches and sound effects can match the lyrical theme.  
+- Example:  
+  Time! past, present, future (3 in 1) [clock-tick scratch + reverb echo trail]  
+
+No Fictional Studios
+- Replace fictional studio names (Iron Fortress, Southern Lord, etc.) with real studios.  
+- Use respected U.S. studios for core audience (Morrisound, Electric Lady, Capitol, Clear Track, The Blasting Room).  
+- Use select international studios for experimental flavor (Abbey Road, AIR, Hansa, Real World).  
+
+Consistency
+- Keep formatting uniform across all tracks.  
+- Structure = Majestic Sentence → Studio Metadata → Section Metadata + Lyrics → Section spacing.
+
+
+[Clear Track Studios, Clearwater FL] [scripture cipher + militant boom-bap]  
+[Recorded at Clear Track Studios, Clearwater FL]  
+[production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]
+
+[Intro:djsounds:record scratches, ambient swell, brass stab FX]  
+
+[Verse 1:rap:boom-bap drums, ambient synths, militant snare rolls]  
+The LORD hear thee in the day of trouble;  
+The name of the God of Jacob defend thee;  
+Send thee help from the sanctuary,  
+And strengthen thee out of Zion;  
+Remember all thy offerings,  
+And accept thy burnt sacrifice; Selah.  
+Grant thee according to thine own heart,  
+And fulfil all thy counsel.
+
+[Verse 2:rap:layered vocals, echo trail, banner wave FX]  
+We will rejoice in thy salvation,  
+And in the name of our God we will set up our banners:  
+The LORD fulfil all thy petitions.
+
+[Verse 3:rap:hard drums, cinematic brass, ambient pads]  
+Now know I that the LORD saveth his anointed;  
+He will hear him from his holy heaven  
+With the saving strength of his right hand.  
+Some trust in chariots, and some in horses:  
+But we will remember the name of the LORD our God.  
+They are brought down and fallen:  
+But we are risen, and stand upright.
+
+(Save, Lord: let the king hear us when we call.)
+
+[Verse 4:djbreak:technical scratch suite:multi-layered crossfades, echo spins, tonal filter sweeps, ambient reverb wash, brass stab FX, reverse snare rolls]  
+
+[Verse 5:fxcue:modulated pitch loop, chopped Psalm 20 fragments, ambient pad layering]  
+Selah... Selah... Selah...
+
+Raise the Banner
+
+In the day of trouble, He hears our cry,Not by sword, nor horse, nor might—But by His name we stand and fight.
+
+Petitions rise, salvation flows,The King of peace already knows.We lift our banner, bold and true,For Christ has overcome for you.
+
+
+
+90s underground hip hop, spiritual warfare themes, DJ scratches, 86 BPM, A minor, 4/4 time signature, ambient synth pads, cinematic brass accents, in final verses. Drums and DJ scratches separate. Consistency stability. Dark sounds with bright melodies. Underground descending. Emotional
