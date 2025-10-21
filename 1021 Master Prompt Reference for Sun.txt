@@ -1,0 +1,264 @@
+### Master Prompt Reference for Suno AI Music Maker V5 — KJV Edition
+
+This document is the single source of truth for generating modular, scripture-based text prompts for Suno AI Music Maker V5. All lyrical content must be verbatim King James Version (KJV) unless the user explicitly authorizes an override. The document defines canonical syntax, controlled vocabularies, persona rules, validation and parsing checks, workflow for chapter→song requests, QA/regression practices, export mapping for studio cue sheets, and edge-case policies.
+
+---
+
+### Top-Level Metadata Block
+
+#### Purpose and format
+- Appears once at the top of every prompt.
+- Single bracketed block; semicolon-separated key:value pairs.
+- Required keys: **studio**, **genre**, **version**.
+- Recommended keys: **persona**, **voice**, **mood**, **delivery**, **groove**, **fx**, **sonic**, **theory**, **rhyme**, **emotion**, **spiritual_weight**, **narrationX**.
+
+Example:
+```markdown
+[studio: Clear Track Studios; genre: scripture cipher; persona: jal_the_messenger; voice: chant; mood: reverent; delivery: solemn; groove: slow_sway; fx: ambient_pad + lo-fi_eq; sonic: organ,subdrone; theory: Mixolydian; rhyme: none; emotion: serene; spiritual_weight: high; narrationX: false; version: V5.2]
+```
+
+Rules:
+- Use lower-case keys and concise tokens.
+- No nested brackets or markdown headers inside the top block.
+- Top-level defaults may be overridden by section blocks.
+
+---
+
+### Canonical Section Format
+
+#### Pattern
+- Each section is a single bracketed block followed immediately by KJV lyric lines (or blank for instrumental).
+- Section label must be the first token inside the bracket; abbreviations preferred (v1, v2, intro, hook, bridge, outro, interlude, prehook).
+- Use `voice:raw` inside section blocks for compactness.
+
+Canonical pattern:
+```markdown
+[<section_label>: voice:raw; tempo: <bpm>; fx: <fx_chain>; stylebox: <style_category>; sonic: <instrumentation>; theory: <mode>; bars: <n>; groove: <groove>]
+<KJV lyrics or blank>
+```
+
+Ordering and repetition:
+- Sections may be ordered, repeated, or omitted.
+- Lyrics must be exact KJV lines unless an explicit override token is present in the top block.
+- No markdown headers or stray text outside brackets that can be interpreted as lyrics.
+
+Example:
+```markdown
+[v2: voice:raw; tempo: 82bpm; fx: analog_warmth + gospel_organ; stylebox: scripture_cipher; sonic: organ,subdrone; theory: Aeolian; bars: 8; groove: slow_swing]
+This is a faithful saying,
+and these things I will that thou affirm constantly,
+that they which have believed in God
+might be careful to maintain good works.
+```
+
+---
+
+### Controlled Libraries (canonical tokens and one-line definitions)
+
+#### Voice Library
+- chant: sustained liturgical delivery
+- spoken: clear spoken-word recitation
+- whisper: intimate low-volume delivery
+- cantor: melodic cantillation
+- drone: sustained tonal texture under words
+- recitative: speech-like melodic delivery
+- spoken-rap: rhythmic spoken delivery with flow
+- homophonic: chordal sung lines
+- chorus-lead: lead with supporting choir
+
+#### Persona Library
+- jal_the_messenger: declarative scripture courier
+- meditative_sage: slow, contemplative guide
+- jubilant_herald: bright, uplifted announcer
+- teacher_cantor: didactic melodic reader
+- community_chorus: multi-voice group body
+
+#### FX Library (allowed)
+- ambient_pad; reverse_pad; lo-fi_eq; reverb_tail; chorus_layer; tape_delay; gospel_organ; synth_wash; subdrone; analog_warmth
+
+Disallowed (automated block):
+- vinyl_crackle; needle_hiss; tape_hiss; soft_vinyl_hiss; any token describing crackle or hiss
+
+#### Stylebox Library
+- cinematic; scripture_cipher; sacred_loop; prophetic_interlude; minimal_chant; liturgical_choral
+
+#### Sonic / Instrumentation Library
+- organ; piano; acoustic_guitar; electric_piano; synthwash; subdrone; choir; strings; brass_stub; gospel_organ
+
+#### Theory Modes
+- Ionian; Dorian; Phrygian; Lydian; Mixolydian; Aeolian; Locrian
+
+#### Groove Presets
+- slow_sway; headnod; mellow_swing; halftime_boom; uptempo_pocket
+
+#### Rhyme / Meter Tokens
+- none; simple_end_rhyme; internal_rhyme; couplet; ABAB; AABB
+
+Library rules:
+- Use exact token names from the libraries.
+- Multi-item values are comma-separated or joined with `+` for FX chains.
+- Expand library tokens only through the contribution workflow.
+
+---
+
+### Validation Rules and Parsing Safety Tests (Automated Checks)
+
+Run for every generated prompt. Report pass/fail with details.
+
+#### Syntax parser checks
+- Balanced bracket presence for top-level and each section.
+- Section label is first token in section block.
+- Semicolon-separated key:value pairs only; keys in canonical order inside sections: section_label → voice:raw → tempo → fx → stylebox → sonic → theory → bars → groove.
+- No markdown headers or stray hashtags outside brackets.
+
+#### Lyric verification
+- Exact-match check for every lyric line against KJV corpus.
+- Report verse references for each matched line and any mismatches with suggested corrections.
+- Enforce user authorization token for any non-KJV lyrics.
+
+#### FX and sonic validation
+- Fail on any disallowed noise token.
+- Confirm fx combinations against allowed-pair matrix.
+- Sonic field must only contain tokens from sonic library.
+
+#### Structural and edge validators
+- Check bars are integer and tempos numeric bpm.
+- Flag empty lyric blocks (instrumental) as intentional only if bars or narrationX indicates intent.
+- Flag verses exceeding N words (configurable; default N=35) as compression candidates.
+- Detect parentheses, em dashes, colons, semicolons and flag as delivery-impact items.
+
+#### Output normalization
+- Trim trailing whitespace, normalize punctuation spacing, collapse duplicate semicolons, normalize token separators.
+
+Validation summary must be included immediately after generation (short checklist).
+
+---
+
+### Workflow: Chapter→Song (two-step: Analysis then Generation)
+
+#### 1. Request intake
+- User supplies: book, chapter, optional verses, explicit overrides (tempo, persona, stylebox, lyrics_override).
+- Assistant confirms request and restates overrides.
+
+#### 2. Statistical Analysis of Approach (first substantive response)
+Assistant generates an analyst-style summary only (no lyrics). Content:
+- Length metrics: total verses; total words; avg words/verse; longest verse length.
+- Density metrics: % imperative sentences; direct speech count; proper noun count; coord clause count.
+- Musical suitability metrics: estimated lyric lines per 16-bar verse; recommended bars per section; suggested bpm range.
+- Structural suggestion: recommended section breakdown with verse→section mapping.
+- Delivery-impact flags: parenthetical content; em dashes; colons; semicolons.
+- Risk flags: long verses, quoted dialogue, archaic punctuation.
+- Confidence score (0–100) for direct mapping to song without compression.
+- Noteworthy list: parentheticals (verses and content); direct speech verses; flagged tokens from Flagged Terms Library.
+
+No lyrics or generation at this stage.
+
+#### 3. User directives or approval
+- User responds with directives (e.g., compress v3 into 8 bars, whispered aside for parentheses) or "go" to proceed as recommended.
+- If no reply, assistant waits; do not auto-proceed.
+
+#### 4. Generation (only after user approval)
+Assistant produces:
+- Top-level metadata block.
+- Bracketed section blocks with voice:raw and canonical fields.
+- KJV-only lyrics verbatim (unless authorized override present).
+- Inline validation summary: syntax pass/fail; KJV-match OK/FAIL counts; disallowed FX present? Y/N.
+- Export mapping for studio cue sheets (textual).
+- QA checklist results.
+
+Then assistant stops and awaits user feedback.
+
+---
+
+### QA Checklist, Regression Testing Corpus, and Version Governance
+
+#### QA Checklist (applied to each generated prompt)
+- Top-level block present and valid.
+- Section labels inside brackets and abbreviated.
+- voice:raw used in section blocks where applicable.
+- KJV-only lyrics verified (or override token present).
+- Disallowed FX absent.
+- Field order correct in section blocks.
+- Parsable by Suno V5 (syntax checks passed).
+
+#### Regression Test Corpus (seed list)
+- Psalm 1; Psalm 23; Proverbs 3; Titus 3; 2 John; Philemon; Jude; 1 Thessalonians 5; Colossians 3; John 11 (shorter sections); plus 10 additional short chapters drawn from Psalms, Proverbs, and epistles (total 20).
+- Run template or library changes against corpus; log failures.
+
+#### Versioning and Changelog Policy
+- Base version token: V5.2.
+- Minor change (typo, example edits) → bump patch: V5.2.1.
+- Library additions or token renames → minor bump: V5.3.
+- Syntax or validation rule changes → major bump: V6.0.
+- Changelog entry must include: date, version, summary, affected tokens/rules, regression results, migration note.
+
+Contribution workflow:
+- Propose token or rule change in a PR-like text block; provide tests against regression corpus; approval requires two collaborator signoffs.
+
+---
+
+### Export Mapping for Studio Cue Sheets and Session Presets (textual)
+
+For each generated prompt assistant provides a non-file textual mapping:
+
+- Track list mapping (section → stems):
+  - e.g., v1 → lead_vocals, organ, subdrone, choir_pad
+  - hook → lead_vocals, choir_lead, synthwash, subdrone
+- Time estimates:
+  - bars → seconds conversion at specified bpm (seconds ≈ bars * 60 / (bpm/4))
+  - include approximate section durations.
+- Mix notes (text):
+  - Lead vocals: presence in 0–3 kHz; slight de-essing; reverb_tail 12–18% wet.
+  - Organ: low-pass at 6 kHz; insert chorus_layer on hooks.
+  - Subdrone: high-pass at 40 Hz; low-cut 30 Hz.
+- Cue labels:
+  - Canonical IDs e.g., CT01_v1, CT01_hook, CT01_outro.
+- Stem priorities:
+  - Vocals > organ > choir > subdrone > synthwash.
+- Session preset suggestions (text only):
+  - BPM, tempo map suggestions, recommended master bus processing keywords (light_compression, warm_eq).
+
+---
+
+### Edge-Case Policies
+
+- Instrumental-only sections:
+  - Allowed. Use empty lyric block and specify bars; set narrationX true/false per intention.
+- Multi-verse compression:
+  - Allowed only with explicit directive. Compression options are presented in analysis with exact verse groupings and target bars.
+- Parenthetical content:
+  - Always flagged in analysis; default handling is include verbatim with suggested delivery (whisper/aside). Final decision by user.
+- Quoted dialogue:
+  - Flagged in analysis; recommended delivery changes (spoken, whisper, conversational). User decides.
+- Long verse handling:
+  - Verses > N words flagged; options: split across sections, compress (requires override), or map to extended bars.
+- Punctuation and archaic tokens:
+  - Flagged for phonetic handling; user may request phonetic hints or persona adjustments.
+
+---
+
+### Examples and Bad-Example Fixes (brief)
+
+Good section block:
+```markdown
+[v1: voice:raw; tempo: 78bpm; fx: ambient_pad; stylebox: cinematic; sonic: organ; theory: Mixolydian; bars: 4; groove: slow_sway]
+The Lord is my shepherd; I shall not want
+He maketh me to lie down in green pastures
+He leadeth me beside the still waters
+He restoreth my soul
+```
+
+Bad (will be rejected by parser):
+- Using markdown header for section: `## v1` (treated as lyric)
+- Including disallowed noise FX: `fx: vinyl_crackle`
+- Placing section label outside bracket
+
+---
+
+### Implementation Checklist (for immediate adoption)
+
+- Adopt canonical token libraries above.
+- Implement syntax parser enforcing field orders and disallowed tokens.
+- Seed regression test corpus and run baseline tests.
+- Use the chapter→song workflow strictly: Analysis → User directive → Generation → Validation → Export mapping.
+- Maintain changelog and bump version per governance rules.
