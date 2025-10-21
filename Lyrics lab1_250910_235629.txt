@@ -1,0 +1,112 @@
+🎤 Lyrics Generation Project
+⚙️ Option Settings
+🎚️ Sliding Scale Options (0–100)
+(Defaults can be set later — these are adjustable per project)
+• Twist Loop Scale → linear vs. modular structure
+• Infighting Scale → 0 = none, 100 = hostile battle stances
+• Swearing Scale → profanity intensity
+• Token Density Scale → lyrical word complexity (randomized per section, or patterned across a whole song)
+• Imagery Scale → plain → surreal/metaphorical
+• Violence Scale → none → gore/brutality
+• Darkness Scale → neutral → doom/occult/apocalyptic
+• Complex Rhyme Scale → simple end-rhymes → multi-syllabic webs
+• Melody vs. Rhythm Scale → chant-like → highly melodic phrasing
+• Speed Scale → slow crawl → hyperspeed (rap doubletime / blast-beats)
+• Repetition Scale → minimal repeat → heavy hooks/mantras
+• Emotion Scale → flat/detached → raw rage/sorrow
+• Obscurity Scale → clear meaning → fully coded/abstract
+• Harshness Scale → clean delivery → guttural/growl/scream
+• Spiritual Weight Scale → secular/raw → biblical/theological
+• Theatrical Scale → stripped raw → operatic / over-the-top
+• Groove Scale → rigid/straight → swung/loose feel
+• Atmosphere Scale → dry/direct → drenched in reverb & space
+• Wordplay Scale → straightforward → pun-heavy / layered doubles
+• Energy Scale → mellow → all-out chaos
+⏻ On/Off Switch Options
+(Flip features on/off per project or per section)
+• 90s Reference (Hip-Hop only)
+• Infighting (yes/no, overrides scale if needed)
+• Parentheses Voice (allow secondary voice artifacts, unpredictable)
+• Notation Hacks Active (asterisks, ellipses, caps, phonetics)
+• Archaic Vocabulary (biblical/old diction)
+• Sound FX Words (boom, clap, scratch)
+• Call & Response (built-in echo/chant)
+• Genre Blend Mode (rap + metal/rock fusion, but no extreme rap-metal blends; limited to hard rock + metal blending)
+• Explicit Storytelling (linear narrative vs. abstract mode)
+• Chant Mode (short repeated lines, crowd feel → includes Burstmetal style definition placeholder)
+• Freestyle Mode (looser structure, rawer lines → handled as a sliding scale, default 25% chance per verse)
+• Build/Drop Dynamics (energy rises/drops triggered)
+• Multi-Section Echoes (repeated motifs across sections)
+• Archetype Mode (character voice, e.g. prophet/warrior/demon)
+• Atmospheric Layering (background hums, drones, textures)
+• Punchline Emphasis (highlight final words of bars)
+• Narrator Voice (omniscient, storyteller mode)
+• Backmasking Hints (cryptic phrases, reversed feel)
+• Silence Breaks (intentional pauses, dead stops)
+• Crowd Shout FX (“yeah!”, “woah!”, “fight!”)
+
+⚙️ Option Settings — Advanced Add-Ons
+1. Structural Options
+• Section Length Scale (micro ↔ extended)
+• Cut-Up Mode [On/Off]
+• Interludes [On/Off]
+• Staggered Rhymes [On/Off]
+2. Stylistic / Delivery Options
+• Accent / Slang Scale (neutral ↔ heavy dialect)
+• Alliteration Scale (none ↔ dense)
+• Dissonance Scale (clean phrasing ↔ chaotic meter)
+• Edge Bleed [On/Off] (cut-offs, incomplete thoughts)
+• Echo Layer [On/Off] (ghost repeats)
+3. Content / Theme Options
+• Realism Scale (mundane ↔ mythic/fantastical)
+• Time Warp Scale (linear ↔ fragmented)
+• Reference Density Scale (none ↔ heavy)
+• Symbol Injection [On/Off] (recurring images)
+• Perspective Shift [On/Off] (1st ↔ 2nd/3rd person)
+
+1. Structure Tags
+Use square brackets [ ] to guide the AI:
+• [Intro]
+• [Verse 1]
+• [Pre-chorus]
+• [Chorus/Drop]
+• [Verse 2]
+• [Bridge]
+• [Outro]
+• [Fade Out]
+• [Instrumental] (guitar, piano, sax, bpm)
+• Special forms (with definitions):
+  - [Ostinato] = a short musical/lyrical phrase repeated throughout.
+  - [Motif] = a recurring idea or lyrical image.
+  - [Hook] = the main catchy line or musical idea.
+  - [Exposition] = section that introduces theme or scene.
+  - [Development] = variation/expansion of an introduced theme.
+  - [Transition] = connective passage between sections.
+  - [Refrain] = short repeated phrase (mini-chorus that returns after verses).
+  - [Coda] = closing “tail” that wraps the song after the last section.
+  - [Tag] = a short repeated ending line/phrase for emphasis.
+  - [Crescendo] = a section that builds gradually in intensity.
+  - [Tutti] = full-force moment where everything hits together (all-in).
+👉 Rule: Only one voice per section. Parentheses ( ) may sometimes act as second voice, but results are unpredictable.
+👉 Tip: Works best with 2 or 4-line blocks (or multiples of 4).
+
+2. Vocal Styling
+• Genres specified directly (underground rap, doom metal, hard rock, metalcore, etc.).
+• Single voice per section only. No multi-voice stacking.
+
+3. Word Shaping
+• Vowel-stretching: goo-o-o-odbye → elongated syllables
+• ALL CAPS + ! or ?: louder/urgent delivery
+• Brackets [ ]: structural/effect directions
+• Parentheses ( ) = optional backing/aside (unpredictable)
+
+4. Dynamics & Effects
+• [Pianissimo] = quiet/soft
+• [Fortissimo] = loud/max energy
+• [Quiet] / [Loud] = simple dynamic hints
+• [Build] / [Drop] = tension/release cues
+• Inline FX: *gunshots, *claps, *explosions, *scratch, *breath
+
+5. Lyric Writing Workflow
+• Modular blocks instead of strict linear flow.
+• Twist Loop = write sections as modular blocks; they can be mixed, re-ordered, or looped to create variety without rewriting. Useful for modular rap cyphers and for reshaping metal/hard-rock sections.

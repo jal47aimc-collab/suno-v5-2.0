@@ -1,0 +1,827 @@
+# The Suno Architect's Blueprint: Complete Guide
+
+## **CORE PHILOSOPHY**
+- Treat your prompt as an architectural blueprint
+- Consistency in metadata tags = predictability in output
+- Primary control levers: [Studio], [Genre], and section-specific tags
+
+PART 1: THE FOUNDATION**
+
+### **Studio & Genre Prompt**
+*Place in main "Style" or "Prompt" box*
+
+**Format:**
+[Studio Name] [Genre, Subgenre, Tempo (if fixed), Key Descriptors]
+
+**Examples:**
+- [Southern Lord Studios] [doom metal, sludge, 55 BPM, crushing riffs, growled vocals]
+- [D&D Studios] [underground hip-hop, dark trap, heavy 808s, gritty rap flow]
+- [Abbey Road Studios] [orchestral rock, epic, cinematic strings, male vocals]
+
+**Rules:**
+- Use lowercase for all except proper nouns (USA, UK)
+- Apply global BPM here only if tempo is constant throughout
+- Studio tag invokes specific sonic signatures
+
+### **Lyrics Metadata Header**
+*Place at top of Lyrics box*
+
+**For Songs with Vocals:**
+[Produced by Producer A and Producer B]
+[Recorded at Studio Name and Another Studio]
+[hyper-modern production with clear vocals, no autotune, Dolby Atmos mix, high-fidelity]
+
+**For Instrumentals:**
+[Produced by Producer A and Producer B]
+[Recorded at Studio Name]
+[hyper-modern production, Dolby Atmos mix, high-fidelity]
+[Instrumental]
+
+PART 2: SONG SECTIONS & INSTRUMENTATION**
+
+### **Metadata Framework**
+*Each section follows this format:*
+**[Section Title: Vocal: Type Instrumentation Tags]
+*Lyrics content*
+
+### **Section Title Library**
+**Standard Structure:**
+- [Intro]
+- [Verse 1]
+- [Pre-Chorus] 
+- [Chorus]
+- [Verse 2]
+- [Bridge]
+- [Breakdown]
+- [Guitar Solo]
+- [Instrumental Break]
+- [Outro]
+
+**Advanced Tags:**
+- [Ostinato] - Repeated short phrases
+- [Exposition] - Alternative to Verse
+- [Development] - Alternative to Chorus
+- [Transition] - Alternative to Bridge
+- [Motif] - Catchy hook sections
+- [Refrain] - Repeated ending lines
+- [Tutti] - Full ensemble sections
+- [Coda] - Ending section
+
+### **Vocal Type Tags**
+**Primary Styles:**
+- [male vocals]
+- [female vocals] 
+- [robotic vocals]
+* Example [Outro:femalevocalsdistorted:.....,.....,....,.....]
+
+**Advanced Vocal Tags:**
+- [growled]
+- [screamed]
+- [rap]
+- [spoken]
+
+- [angelic voice]
+- [whispered]
+- [layered vocals]
+- [gang vocals]
+- [distorted vocals]
+- [reverb vocals]
+- [echo effect]
+
+### **Instrumentation Tags**
+*Use 3-5 tags per section*
+
+**Guitar & Bass:**
+- [crushing riffs]
+- [sludgy bass]
+- [heavy distorted guitars]
+- [palm-muted riffs]
+- [clean guitar]
+- [melodic guitar solos]
+- [gritty bassline]
+
+**Drums & Percussion:**
+- [double-kick drums]
+- [half-time drums]
+- [syncopated beat]
+- [hard-hitting beats]
+- [tight snare]
+- [boom-bap drums]
+
+**Synth & Sound Design:**
+- [atmospheric synths]
+- [dark pads]
+- [wobble bass]
+- [glitch effects]
+- [lo-fi samples]
+- [cinematic strings]
+
+**Music Theory Directives:**
+- [120 BPM]
+- [half-time feel]
+- [minor key]
+- [dissonant chords]
+- [builds intensity]
+- [dynamic shift]
+
+### **Best Practices**
+- Follow hierarchy: Section > Vocal > Instruments
+- Use descriptive, specific tags
+- Maintain consistency across similar sections(and/or slight variance)
+- Use dynamic tags for changes: [breakdown], [builds intensity]
+- Combine multiple tags for complex sounds
+- Experiment, with music theory
+
+Part 3 - Majestic Sentence & Brief Description
+
+## **THE MAJESTIC SENTENCE: Song Description**
+*Place this ABOVE your [Studio] & [Genre] prompt in the Style box*
+
+### **Purpose:**
+- Sets the overarching narrative and emotional tone
+- Acts as a creative director for the entire generation
+- Has profound impact on musical style and arrangement choices
+- gives fine details to suno ai 
+### **Format:**
+One majestic, evocative sentence describing the song's core essence, or highlighting a particular aspect.
+
+### **Examples:**
+a desperate escape through a dying star system, where pulsing synth arpeggios race against collapsing time signatures and a desperate vocal pleads for redemption, chants & Breakdown contrast 
+-191/200
+
+digital ghost haunting the forgotten servers of the internet, its voice a glitched melody woven through decaying tape loops and the hum of failing infrastructure, robotVoiceStyle, dark descending
+-196/200
+
+a love story etched in circuitry and neon, told through the warm crackle of analog synthesizers and the cold, precise beat of a machine heart
+-141/200
+
+a slow-motion avalanche in a dream, with layers of distorted guitars piling upon each other and a choir singing a lament in reverse, buried under the weight of sound -165/200
+
+**Song Description**
+**Studio & Genre Prompt:**
+**Star song**
+**End**
+
+Song Description...
+[Exact Studio Name, City] [Genre, Subgenre, BPM, key descriptors, Country][atmospheric black metal, post-metal, tremolo picking, blast beats, Norway]
+
+[Intro:malevocals.......]yo yo yo 
+
+[Next..........]lyrics (go) hereeee
+
+- Affects dynamics (bigger contrasts, more dramatic pauses)
+- Shapes instrumentation (adds unexpected elements that fit the theme)
+
+[Production Standards Update Pack]
+
+Majestic Sentence
+- Always at the top of the track.  
+- 1000 Characters or less. 
+- Written as prose, no brackets.  
+
+Studio Metadata (real only)
+- Must use a real, established studio (U.S. or international).  
+- Format:  
+  [Studio Name, City State/Country] [genre + style tags]  
+  [Recorded at Studio Name, City State/Country]  
+  [production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]  
+- No fictional studios.  
+- No artist/producer persona names (J.A.L, DJ Infinite, etc.) in metadata.  
+- Metadata is only for established sounds, real studios, and factual notes.  
+
+Section Format
+- Each section begins with metadata inside brackets.  
+- Lyrics come directly after metadata in a text block.  
+- One blank line between sections.  
+- Example:  
+  [Verse 1:rap:boom-bap drums, gritty bassline, vinyl crackle]  
+  Truth from the KJV, cut sharper than a blade  
+  Still walking unafraid, world trembling, I stay  
+
+Sound Design & Accents
+- All sound effects, scratches, drum cues, and FX must remain inside brackets.  
+- Nothing outside brackets unless it is meant to be spoken/sung.  
+- Example:  
+  [Intro:djsounds:vinyl crackle, record scratches, clock-tick echo, cosmic reverb wash]  
+
+Lyrics vs Metadata Separation
+- Lyrics = outside brackets.  
+- Metadata = inside brackets.  
+- If it’s not meant to be pronounced, it stays in brackets.  
+
+Element-Matching FX (Optional)
+- DJ scratches and sound effects can match the lyrical theme.  
+- Example:  
+  Time! past, present, future (3 in 1) [clock-tick scratch + reverb echo trail]  
+
+No Fictional Studios
+- Replace fictional studio names (Iron Fortress, Southern Lord, etc.) with real studios.  
+- Use respected U.S. studios for core audience (Morrisound, Electric Lady, Capitol, Clear Track, The Blasting Room).  
+- Use select international studios for experimental flavor (Abbey Road, AIR, Hansa, Real World).  
+
+Consistency
+- Keep formatting uniform across all tracks.  
+- Structure = Majestic Sentence → Studio Metadata → Section Metadata + Lyrics → Section spacing.
+
+
+[Clear Track Studios, Clearwater FL] [scripture cipher + militant boom-bap]  
+[Recorded at Clear Track Studios, Clearwater FL]  
+[production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]
+
+[Intro:djsounds:record scratches, ambient swell, brass stab FX]  
+
+[Verse 1:rap:boom-bap drums, ambient synths, militant snare rolls]  
+The LORD hear thee in the day of trouble;  
+The name of the God of Jacob defend thee;  
+Send thee help from the sanctuary,  
+And strengthen thee out of Zion;  
+Remember all thy offerings,  
+And accept thy burnt sacrifice; Selah.  
+Grant thee according to thine own heart,  
+And fulfil all thy counsel.
+
+[Verse 2:rap:layered vocals, echo trail, banner wave FX]  
+We will rejoice in thy salvation,  
+And in the name of our God we will set up our banners:  
+The LORD fulfil all thy petitions.
+
+[Verse 3:rap:hard drums, cinematic brass, ambient pads]  
+Now know I that the LORD saveth his anointed;  
+He will hear him from his holy heaven  
+With the saving strength of his right hand.  
+Some trust in chariots, and some in horses:  
+But we will remember the name of the LORD our God.  
+They are brought down and fallen:  
+But we are risen, and stand upright.
+
+(Save, Lord: let the king hear us when we call.)
+
+[Verse 4:djbreak:technical scratch suite:multi-layered crossfades, echo spins, tonal filter sweeps, ambient reverb wash, brass stab FX, reverse snare rolls]  
+
+[Verse 5:fxcue:modulated pitch loop, chopped Psalm 20 fragments, ambient pad layering]  
+Selah... Selah... Selah...
+
+Raise the Banner
+
+In the day of trouble, He hears our cry,Not by sword, nor horse, nor might—But by His name we stand and fight.
+
+Petitions rise, salvation flows,The King of peace already knows.We lift our banner, bold and true,For Christ has overcome for you.
+
+
+
+90s underground hip hop, spiritual warfare themes, DJ scratches, 86 BPM, A minor, 4/4 time signature, ambient synth pads, cinematic brass accents, in final verses. Drums and DJ scratches separate. Consistency stability. Dark sounds with bright melodies. Underground descending. Emotional
+
+
+🎤 Lyrics Generation Project
+⚙️ Option Settings
+🎚️ Sliding Scale Options (0–100)
+(Defaults can be set later — these are adjustable per project)
+• Twist Loop Scale → linear vs. modular structure
+• Infighting Scale → 0 = none, 100 = hostile battle stances
+• Swearing Scale → profanity intensity
+• Token Density Scale → lyrical word complexity (randomized per section, or patterned across a whole song)
+• Imagery Scale → plain → surreal/metaphorical
+• Violence Scale → none → gore/brutality
+• Darkness Scale → neutral → doom/occult/apocalyptic
+• Complex Rhyme Scale → simple end-rhymes → multi-syllabic webs
+• Melody vs. Rhythm Scale → chant-like → highly melodic phrasing
+• Speed Scale → slow crawl → hyperspeed (rap doubletime / blast-beats)
+• Repetition Scale → minimal repeat → heavy hooks/mantras
+• Emotion Scale → flat/detached → raw rage/sorrow
+• Obscurity Scale → clear meaning → fully coded/abstract
+• Harshness Scale → clean delivery → guttural/growl/scream
+• Spiritual Weight Scale → secular/raw → biblical/theological
+• Theatrical Scale → stripped raw → operatic / over-the-top
+• Groove Scale → rigid/straight → swung/loose feel
+• Atmosphere Scale → dry/direct → drenched in reverb & space
+• Wordplay Scale → straightforward → pun-heavy / layered doubles
+• Energy Scale → mellow → all-out chaos
+⏻ On/Off Switch Options
+(Flip features on/off per project or per section)
+• 90s Reference (Hip-Hop only)
+• Infighting (yes/no, overrides scale if needed)
+• Parentheses Voice (allow secondary voice artifacts, unpredictable)
+• Notation Hacks Active (asterisks, ellipses, caps, phonetics)
+• Archaic Vocabulary (biblical/old diction)
+• Sound FX Words (boom, clap, scratch)
+• Call & Response (built-in echo/chant)
+• Genre Blend Mode (rap + metal/rock fusion, but no extreme rap-metal blends; limited to hard rock + metal blending)
+• Explicit Storytelling (linear narrative vs. abstract mode)
+• Chant Mode (short repeated lines, crowd feel → includes Burstmetal style definition placeholder)
+• Freestyle Mode (looser structure, rawer lines → handled as a sliding scale, default 25% chance per verse)
+• Build/Drop Dynamics (energy rises/drops triggered)
+• Multi-Section Echoes (repeated motifs across sections)
+• Archetype Mode (character voice, e.g. prophet/warrior/demon)
+• Atmospheric Layering (background hums, drones, textures)
+• Punchline Emphasis (highlight final words of bars)
+• Narrator Voice (omniscient, storyteller mode)
+• Backmasking Hints (cryptic phrases, reversed feel)
+• Silence Breaks (intentional pauses, dead stops)
+• Crowd Shout FX (“yeah!”, “woah!”, “fight!”)
+
+⚙️ Option Settings — Advanced Add-Ons
+1. Structural Options
+• Section Length Scale (micro ↔ extended)
+• Cut-Up Mode [On/Off]
+• Interludes [On/Off]
+• Staggered Rhymes [On/Off]
+2. Stylistic / Delivery Options
+• Accent / Slang Scale (neutral ↔ heavy dialect)
+• Alliteration Scale (none ↔ dense)
+• Dissonance Scale (clean phrasing ↔ chaotic meter)
+• Edge Bleed [On/Off] (cut-offs, incomplete thoughts)
+• Echo Layer [On/Off] (ghost repeats)
+3. Content / Theme Options
+• Realism Scale (mundane ↔ mythic/fantastical)
+• Time Warp Scale (linear ↔ fragmented)
+• Reference Density Scale (none ↔ heavy)
+• Symbol Injection [On/Off] (recurring images)
+• Perspective Shift [On/Off] (1st ↔ 2nd/3rd person)
+
+1. Structure Tags
+Use square brackets [ ] to guide the AI:
+• [Intro]
+• [Verse 1]
+• [Pre-chorus]
+• [Chorus/Drop]
+• [Verse 2]
+• [Bridge]
+• [Outro]
+• [Fade Out]
+• [Instrumental] (guitar, piano, sax, bpm)
+• Special forms (with definitions):
+  - [Ostinato] = a short musical/lyrical phrase repeated throughout.
+  - [Motif] = a recurring idea or lyrical image.
+  - [Hook] = the main catchy line or musical idea.
+  - [Exposition] = section that introduces theme or scene.
+  - [Development] = variation/expansion of an introduced theme.
+  - [Transition] = connective passage between sections.
+  - [Refrain] = short repeated phrase (mini-chorus that returns after verses).
+  - [Coda] = closing “tail” that wraps the song after the last section.
+  - [Tag] = a short repeated ending line/phrase for emphasis.
+  - [Crescendo] = a section that builds gradually in intensity.
+  - [Tutti] = full-force moment where everything hits together (all-in).
+👉 Rule: Only one voice per section. Parentheses ( ) may sometimes act as second voice, but results are unpredictable.
+👉 Tip: Works best with 2 or 4-line blocks (or multiples of 4).
+
+2. Vocal Styling
+• Genres specified directly (underground rap, doom metal, hard rock, metalcore, etc.).
+• Single voice per section only. No multi-voice stacking.
+
+3. Word Shaping
+• Vowel-stretching: goo-o-o-odbye → elongated syllables
+• ALL CAPS + ! or ?: louder/urgent delivery
+• Brackets [ ]: structural/effect directions
+• Parentheses ( ) = optional backing/aside (unpredictable)
+
+4. Dynamics & Effects
+• [Pianissimo] = quiet/soft
+• [Fortissimo] = loud/max energy
+• [Quiet] / [Loud] = simple dynamic hints
+• [Build] / [Drop] = tension/release cues
+• Inline FX: *gunshots, *claps, *explosions, *scratch, *breath
+
+5. Lyric Writing Workflow
+• Modular blocks instead of strict linear flow.
+• Twist Loop = write sections as modular blocks; they can be mixed, re-ordered, or looped to create variety without rewriting. Useful for modular rap cyphers and for reshaping metal/hard-rock sections.
+
+
+Jacob (MC JAL) — Main Character
+• Background: raised in Erie, PA, and now Florida-based. Independent Fundamental Baptist and King James Only advocate. His faith shape his lyrical presence, pulling from underground rap scenes.
+• Role: Lead character / cornerstone of CypherHub-Mode.narrative themes, lyrical tone, and spiritual energy.
+• Style: Raw underground, heavy biblical themes,
+• Contribution: sets themes 
+• Vibe: A preaching-poet with uncompromising fire.
+Core Characteristics:
+• Christian (baptist)
+• K j v onlyism.
+• Faith over works 
+Persona:MC JAL
+Quotes:
+• “Truth from the KJV" " it's liken unto..."
+Notes:
+• Has two dogs named fancy & frankie
+• Soul winner, truth speaker. 
+Persona: ( metalcore vocalist.) 
+• Sing a song writer.
+• Dark sounds with deep write messages
+• Darkest Hour, Norma Jean, Deafheaven
+
+
+90sundergroundrap monotone & meditative with steady boom bap rhythm & restrained flow then erupts emotionally without breaking structure the burst being a release of conviction not chaos. delivery rises from low register sermon pacing to high emotional cadence a dynamic ascent where the Word itself drives the shift Bars lengthen vowels stretch and syllables pulse like a phrasing. breath control, the fuse that lights. beat mirrors that motion dusty loops. bass warms & widens hi hats open slightly and DJ scratches thicken into layered textures, the burst hits the track brightens in harmonic density extra samples chromatic intervals or filtered drones enter the mix. a moment of prophetic clarity inside the darkness After the climax the energy subsides back to the groove like an exhale of revelation. always ends resolved, inside a sanctified afterglow. Boom bap composition with spiritual catharsis The burst is when Scripture and sound align a sudden lifting of pressure that feels cerebral
+
+
+[Electric Lady Studios, NYC NY]  
+[rap underground, chill electric textures + boom-bap cadence, 105 BPM]  
+[Recorded at Electric Lady Studios, NYC NY]  
+[production notes: spoken Word dry over electric pads, rap sections intensified with boom-bap drums, bass groove, vinyl crackle retained throughout]  
+[Spoken Word:MC JAL:chill electric background, vinyl hiss]
+
+
+
+[Production Standards Update Pack]
+
+Majestic Sentence
+- Always at the top of the track.  
+- 1000 Characters or less. 
+- Written as prose, no brackets.  
+
+Studio Metadata (real only)
+- Must use a real, established studio (U.S. or international).  
+- Format:  
+  [Studio Name, City State/Country] [genre + style tags]  
+  [Recorded at Studio Name, City State/Country]  
+  [production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]  
+- No fictional studios.  
+- No artist/producer persona names (J.A.L, DJ Infinite, etc.) in metadata.  
+- Metadata is only for established sounds, real studios, and factual notes.  
+
+Section Format
+- Each section begins with metadata inside brackets.  
+- Lyrics come directly after metadata in a text block.  
+- One blank line between sections.  
+- Example:  
+  [Verse 1:rap:boom-bap drums, gritty bassline, vinyl crackle]  
+  Truth from the KJV, cut sharper than a blade  
+  Still walking unafraid, world trembling, I stay  
+
+Sound Design & Accents
+- All sound effects, scratches, drum cues, and FX must remain inside brackets.  
+- Nothing outside brackets unless it is meant to be spoken/sung.  
+- Example:  
+  [Intro:djsounds:vinyl crackle, record scratches, clock-tick echo, cosmic reverb wash]  
+
+Lyrics vs Metadata Separation
+- Lyrics = outside brackets.  
+- Metadata = inside brackets.  
+- If it’s not meant to be pronounced, it stays in brackets.  
+
+Element-Matching FX (Optional)
+- DJ scratches and sound effects can match the lyrical theme.  
+- Example:  
+  Time! past, present, future (3 in 1) [clock-tick scratch + reverb echo trail]  
+
+No Fictional Studios
+- Replace fictional studio names (Iron Fortress, Southern Lord, etc.) with real studios.  
+- Use respected U.S. studios for core audience (Morrisound, Electric Lady, Capitol, Clear Track, The Blasting Room).  
+- Use select international studios for experimental flavor (Abbey Road, AIR, Hansa, Real World).  
+
+Consistency
+- Keep formatting uniform across all tracks.  
+- Structure = Majestic Sentence → Studio Metadata → Section Metadata + Lyrics → Section spacing.
+
+
+[Clear Track Studios, Clearwater FL] [scripture cipher + militant boom-bap]  
+[Recorded at Clear Track Studios, Clearwater FL]  
+[production notes: hyper-modern production, clear vocals, Dolby Atmos mix, high-fidelity]
+
+[Intro:djsounds:record scratches, ambient swell, brass stab FX]  
+
+[Verse 1:rap:boom-bap drums, ambient synths, militant snare rolls]  
+The LORD hear thee in the day of trouble;  
+The name of the God of Jacob defend thee;  
+Send thee help from the sanctuary,  
+And strengthen thee out of Zion;  
+Remember all thy offerings,  
+And accept thy burnt sacrifice; Selah.  
+Grant thee according to thine own heart,  
+And fulfil all thy counsel.
+
+[Verse 2:rap:layered vocals, echo trail, banner wave FX]  
+We will rejoice in thy salvation,  
+And in the name of our God we will set up our banners:  
+The LORD fulfil all thy petitions.
+
+[Verse 3:rap:hard drums, cinematic brass, ambient pads]  
+Now know I that the LORD saveth his anointed;  
+He will hear him from his holy heaven  
+With the saving strength of his right hand.  
+Some trust in chariots, and some in horses:  
+But we will remember the name of the LORD our God.  
+They are brought down and fallen:  
+But we are risen, and stand upright.
+
+(Save, Lord: let the king hear us when we call.)
+
+[Verse 4:djbreak:technical scratch suite:multi-layered crossfades, echo spins, tonal filter sweeps, ambient reverb wash, brass stab FX, reverse snare rolls]  
+
+[Verse 5:fxcue:modulated pitch loop, chopped Psalm 20 fragments, ambient pad layering]  
+Selah... Selah... Selah...
+
+Raise the Banner
+
+In the day of trouble, He hears our cry,Not by sword, nor horse, nor might—But by His name we stand and fight.
+
+Petitions rise, salvation flows,The King of peace already knows.We lift our banner, bold and true,For Christ has overcome for you.
+
+
+
+90s underground hip hop, spiritual warfare themes, DJ scratches, 86 BPM, A minor, 4/4 time signature, ambient synth pads, cinematic brass accents, in final verses. Drums and DJ scratches separate. Consistency stability. Dark sounds with bright melodies. Underground descending. Emotional
+
+
+The Book of John  
+The Gospel According to Religious Arts
+
+---
+
+Project Vision  
+This is a cohesive cipher-based scripture album built around the Book of John using the King James Bible text. Each chapter is designed to flow with modular freestyles, structured hooks, and intentional commentary. The project builds narrative and theological continuity through recurring motifs and sonic transitions. It is not a collection of standalone tracks but a unified spiritual and musical journey.
+
+---
+
+Chapter Structure Template  
+Each chapter follows this format:
+
+HOOK  
+A chapter-specific chorus that sets the tone and theme
+
+CIPHER  
+Freestyle scripture overlays formatted for clarity and flow
+
+COMMENTARY  
+Intentional Infinite drops that support the message with precision
+
+BRIDGE  
+New Testament and Old Testament overlay using the two plus one system only
+
+OUTRO  
+Echo verse, prayer, or fade to close the chapter
+
+---
+
+Recurring Motifs
+
+“In the beginning was the Word”  
+Used as a foundational anchor in Chapter 1
+
+“Verily, verily”  
+Used as an echo cue for emphasis and repetition
+
+“I am” statements  
+Used as thematic hooks in selected chapters such as John 6:35, John 8:12, John 10:11, John 11:25, John 14:6, and John 15:1
+
+---
+
+Formatting Standards
+
+Formatting is driven by context and cadence  
+Scripture is labeled as King James Bible text  
+Studio cue tags include HOOK, CIPHER, COMMENTARY, BRIDGE, OUTRO, ECHO, and PRAYER  
+All formatting is metadata-ready for CapCut, Infinite overlays, and modular remixing  
+Infinite commentary is structured and intentional, not spontaneous
+
+---
+
+Chapter Mapping Preview
+
+John 1  
+HOOK  
+King James Bible text John 1:1 through 5  
+CIPHER  
+King James Bible text John 1:6 through 14  
+COMMENTARY  
+“He came unto His own”  
+BRIDGE  
+Genesis 1 overlay  
+OUTRO  
+“Full of grace and truth”
+
+John 2  
+HOOK  
+“My hour is not yet come”  
+CIPHER  
+Water into wine narrative  
+COMMENTARY  
+Temple cleansing  
+BRIDGE  
+Psalm 69:9 overlay  
+OUTRO  
+“He knew what was in man”
+
+---
+
+Style Influence Mapping
+
+Prologue  
+John 1:1 through 18  
+Theme  
+Eternal Word, divine light, incarnation  
+Style Influence  
+Ambient chant and spoken intro
+
+Public Ministry  
+John 1:19 through 12:50  
+Theme  
+Miracles, rising tension, public teaching  
+Style Influence  
+Cipher gospel, minimalist boom bap, scripture drill
+
+Private Ministry  
+John 13 through 17  
+Theme  
+Intimacy, divine teaching, prayer  
+Style Influence  
+Spoken word, clean acoustic, meditative loops
+
+Passion Narrative  
+John 18 through 19  
+Theme  
+Betrayal, trial, crucifixion  
+Style Influence  
+Industrial trap and cinematic textures
+
+Resurrection and Commission  
+John 20 through 21  
+Theme  
+Restoration, calling, victory  
+Style Influence  
+Anthemic chant, layered scripture echo, victory cipher
+
+---
+
+Integration Strategy
+
+Text overlays will display the chapter title, style influence, spiritual theme, and cue tag such as HOOK, CIPHER, or BRIDGE  
+Studio cue sheets will tag each section with its style influence for production clarity
+
+Flag.\nWords that don't get pronounced correctly... 
+
+Word Library: Flagged Terms for Studio Clarity  
+For use in narration, cipher overlays, and AI voice synthesis
+
+---
+
+defileth  
+- Archaic “-eth” ending.  
+- Pronounce as “defile-ith” with a soft “th” (like “with,” not “teeth”).  
+- Common in Matthew 15 and John 15.  
+- Tag for narration voice or phonetic cue.  
+- Avoid cipher delivery unless stylized intentionally.
+
+leaven  
+- Often mispronounced or flattened in AI voice delivery.  
+- Emphasize first syllable: “LEV-en.”  
+- Appears in parables and doctrinal warnings.  
+- Tag for clarity in cipher or overlay.  
+- Consider commentary drop when used metaphorically.
+
+---
+
+Studio Strategy for Flagged Terms
+
+- Assign narration voice for archaic or sensitive phrasing.  
+- Use phonetic cues in scripts (e.g., “defile-ith”) to guide AI voice tools.  
+- In CapCut overlays, you may modernize the text while keeping KJB audio intact.  
+- Avoid spontaneous cipher use of flagged terms unless the flow supports it.  
+- Infinite commentary should only highlight these words when contextually relevant.
+
+---
+
+Formatting Logic
+
+- All flagged terms are tracked in this library for consistency.  
+- Cue sheets will include a “Flagged Word” column for each chapter.  
+- Words may be tagged as:  
+  - Narration Only  
+  - Phonetic Cue Required  
+  - Commentary Eligible  
+  - Overlay Sensitive
+
+Suno AI Song Structure Layout
+
+1. [ Intro ]  
+   - Lyrics go here  
+   - Use 2, 4, 6, or 8 lines  
+   - After this section, insert a single asterisk line  
+   - Example:  
+     Line 1  
+     Line 2  
+     *  
+
+2. [ Chorus or next song section ]  
+   - Bracket contains:  
+     - First: Song structure label (e.g., Chorus, Verse 2)  
+     - Second: Voice type (e.g., Unified, Whisper, Infinite)  
+     - Third: Sonic sound (e.g., Ambient, Drill, Chant)  
+   - Lyrics for this section go here  
+   - After this section, insert three asterisks  
+   - Example:  
+     [ Chorus, Unified, Ambient chant ]  
+     Line 1  
+     Line 2  
+     *  
+
+3. [ Third song section ]  
+   - Bracket contains formatting cue for Suno AI  
+   - Lyrics can be stylized with cadence  
+   - Echoes or ambient repeats go in parentheses  
+   - Example:  
+     [ Bridge, Infinite, Layered scripture echo ]  
+     I saw the light (shine on me)  
+     The Word was made flesh (flesh, flesh)  
+
+4. [ Outra ]  
+   - Voice type: Low whisper  
+   - Sonic cue: Base only, repeat, fade to silence  
+   - Example:  
+     [ Outra, Low whisper, Base only repeat fade to silence ]  
+     Full of grace and truth  
+     He came unto His own  
+     (unto His own...)  
+
+[ Narration 1: Ambient echo, Soft spoken ]  
+In the beginning God created  
+The heaven and the earth  
+*  
+
+[ Chorus 1: Unified voice, Ambient chant ]  
+In the beginning was the Word  
+And the Word was with God  
+And the Word was God  
+The same was in the beginning with God  
+All things were made by him  
+And without him was not any thing made that was made  
+In him was life  
+And the life was the light of men  
+And the light shineth in darkness  
+And the darkness comprehended it not  
+*  
+
+[ Narration 2: Deep voice, Bass hum ]  
+There was a man sent from God  
+Whose name was John  
+*  
+
+[ V1: Raw flow, Drums kick in, Theatrical swell ]  
+The same came for a witness  
+To bear witness of the Light  
+That all men through him might believe  
+He was not that Light  
+But was sent to bear witness of that Light  
+That was the true Light  
+Which lighteth every man  
+That cometh into the world  
+He was in the world  
+And the world was made by him  
+And the world knew him not  
+He came unto his own  
+And his own received him not  
+But as many as received him  
+To them gave he power  
+To become the sons of God  
+Even to them that believe on his name  
+Which were born, not of blood  
+Nor of the will of the flesh  
+Nor of the will of man  
+But of God  
+And the Word was made flesh  
+And dwelt among us  
+And we beheld his glory  
+The glory as of the only begotten of the Father  
+Full of grace and truth  
+*  
+
+[ Course 1 ]  
+
+[ Narration 3: Infinite voice, Echo chamber ]  
+John bare witness of him, and cried, saying,  
+*  
+
+[ V2: Cipher voice, Minimal percussion ]  
+This was he of whom I spake  
+He that cometh after me is preferred before me  
+For he was before me  
+And of his fulness have all we received  
+And grace for grace  
+For the law was given by Moses  
+But grace and truth came by Jesus Christ  
+No man hath seen God at any time  
+The only begotten Son  
+Which is in the bosom of the Father  
+He hath declared him  
+*  
+
+[ Course 1 ]  
+
+[ Narration 4: Infinite voice, Echo chamber ]  
+And this is the record of John  
+When the Jews sent priests and Levites from Jerusalem to ask him  
+Who art thou?  
+And he confessed  
+*  
+
+[ V3: Cipher voice, Raw cadence, Mid-tempo percussion ]  
+And denied not  
+But confessed, I am not the Christ  
+And they asked him, What then?  
+Art thou Elias?  
+And he saith, I am not  
+Art thou that prophet?  
+And he answered, No  
+Then said they unto him  
+Who art thou?  
+That we may give an answer to them that sent us  
+What sayest thou of thyself?  
+He said, I am the voice of one crying in the wilderness  
+Make straight the way of the Lord  
+As said the prophet Esaias
