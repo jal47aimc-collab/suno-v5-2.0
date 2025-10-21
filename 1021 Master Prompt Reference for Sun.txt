@@ -261,4 +261,10 @@ Bad (will be rejected by parser):
 - Implement syntax parser enforcing field orders and disallowed tokens.
 - Seed regression test corpus and run baseline tests.
 - Use the chapter→song workflow strictly: Analysis → User directive → Generation → Validation → Export mapping.
+
 - Maintain changelog and bump version per governance rules.
+
+Updates.
+• 	Bracket format: single-line top-level metadata; single-line section headers; lyrics placed outside brackets.
+• 	Delimiters: commas used for lists, semicolons preserved inside KJV lines only.
+• 	Source: all Bible text pulled only from King James Bible Online link included in metadata.
