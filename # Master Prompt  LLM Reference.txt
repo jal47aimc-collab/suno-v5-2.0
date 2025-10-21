@@ -1853,3 +1853,309 @@ Petitions rise, salvation flows,The King of peace already knows.We lift our bann
 
 
 90s underground hip hop, spiritual warfare themes, DJ scratches, 86 BPM, A minor, 4/4 time signature, ambient synth pads, cinematic brass accents, in final verses. Drums and DJ scratches separate. Consistency stability. Dark sounds with bright melodies. Underground descending. Emotional
+The Book of John  
+The Gospel According to Religious Arts
+
+---
+
+Project Vision  
+This is a cohesive cipher-based scripture album built around the Book of John using the King James Bible text. Each chapter is designed to flow with modular freestyles, structured hooks, and intentional commentary. The project builds narrative and theological continuity through recurring motifs and sonic transitions. It is not a collection of standalone tracks but a unified spiritual and musical journey.
+
+---
+
+Chapter Structure Template  
+Each chapter follows this format:
+
+HOOK  
+A chapter-specific chorus that sets the tone and theme
+
+CIPHER  
+Freestyle scripture overlays formatted for clarity and flow
+
+COMMENTARY  
+Intentional Infinite drops that support the message with precision
+
+BRIDGE  
+New Testament and Old Testament overlay using the two plus one system only
+
+OUTRO  
+Echo verse, prayer, or fade to close the chapter
+
+---
+
+Recurring Motifs
+
+“In the beginning was the Word”  
+Used as a foundational anchor in Chapter 1
+
+“Verily, verily”  
+Used as an echo cue for emphasis and repetition
+
+“I am” statements  
+Used as thematic hooks in selected chapters such as John 6:35, John 8:12, John 10:11, John 11:25, John 14:6, and John 15:1
+
+---
+
+Formatting Standards
+
+Formatting is driven by context and cadence  
+Scripture is labeled as King James Bible text  
+Studio cue tags include HOOK, CIPHER, COMMENTARY, BRIDGE, OUTRO, ECHO, and PRAYER  
+All formatting is metadata-ready for CapCut, Infinite overlays, and modular remixing  
+Infinite commentary is structured and intentional, not spontaneous
+
+---
+
+Chapter Mapping Preview
+
+John 1  
+HOOK  
+King James Bible text John 1:1 through 5  
+CIPHER  
+King James Bible text John 1:6 through 14  
+COMMENTARY  
+“He came unto His own”  
+BRIDGE  
+Genesis 1 overlay  
+OUTRO  
+“Full of grace and truth”
+
+John 2  
+HOOK  
+“My hour is not yet come”  
+CIPHER  
+Water into wine narrative  
+COMMENTARY  
+Temple cleansing  
+BRIDGE  
+Psalm 69:9 overlay  
+OUTRO  
+“He knew what was in man”
+
+---
+
+Style Influence Mapping
+
+Prologue  
+John 1:1 through 18  
+Theme  
+Eternal Word, divine light, incarnation  
+Style Influence  
+Ambient chant and spoken intro
+
+Public Ministry  
+John 1:19 through 12:50  
+Theme  
+Miracles, rising tension, public teaching  
+Style Influence  
+Cipher gospel, minimalist boom bap, scripture drill
+
+Private Ministry  
+John 13 through 17  
+Theme  
+Intimacy, divine teaching, prayer  
+Style Influence  
+Spoken word, clean acoustic, meditative loops
+
+Passion Narrative  
+John 18 through 19  
+Theme  
+Betrayal, trial, crucifixion  
+Style Influence  
+Industrial trap and cinematic textures
+
+Resurrection and Commission  
+John 20 through 21  
+Theme  
+Restoration, calling, victory  
+Style Influence  
+Anthemic chant, layered scripture echo, victory cipher
+
+---
+
+Integration Strategy
+
+Text overlays will display the chapter title, style influence, spiritual theme, and cue tag such as HOOK, CIPHER, or BRIDGE  
+Studio cue sheets will tag each section with its style influence for production clarity
+
+Flag.\nWords that don't get pronounced correctly... 
+
+Word Library: Flagged Terms for Studio Clarity  
+For use in narration, cipher overlays, and AI voice synthesis
+
+---
+
+defileth  
+- Archaic “-eth” ending.  
+- Pronounce as “defile-ith” with a soft “th” (like “with,” not “teeth”).  
+- Common in Matthew 15 and John 15.  
+- Tag for narration voice or phonetic cue.  
+- Avoid cipher delivery unless stylized intentionally.
+
+leaven  
+- Often mispronounced or flattened in AI voice delivery.  
+- Emphasize first syllable: “LEV-en.”  
+- Appears in parables and doctrinal warnings.  
+- Tag for clarity in cipher or overlay.  
+- Consider commentary drop when used metaphorically.
+
+---
+
+Studio Strategy for Flagged Terms
+
+- Assign narration voice for archaic or sensitive phrasing.  
+- Use phonetic cues in scripts (e.g., “defile-ith”) to guide AI voice tools.  
+- In CapCut overlays, you may modernize the text while keeping KJB audio intact.  
+- Avoid spontaneous cipher use of flagged terms unless the flow supports it.  
+- Infinite commentary should only highlight these words when contextually relevant.
+
+---
+
+Formatting Logic
+
+- All flagged terms are tracked in this library for consistency.  
+- Cue sheets will include a “Flagged Word” column for each chapter.  
+- Words may be tagged as:  
+  - Narration Only  
+  - Phonetic Cue Required  
+  - Commentary Eligible  
+  - Overlay Sensitive
+
+Suno AI Song Structure Layout
+
+1. [ Intro ]  
+   - Lyrics go here  
+   - Use 2, 4, 6, or 8 lines  
+   - After this section, insert a single asterisk line  
+   - Example:  
+     Line 1  
+     Line 2  
+     *  
+
+2. [ Chorus or next song section ]  
+   - Bracket contains:  
+     - First: Song structure label (e.g., Chorus, Verse 2)  
+     - Second: Voice type (e.g., Unified, Whisper, Infinite)  
+     - Third: Sonic sound (e.g., Ambient, Drill, Chant)  
+   - Lyrics for this section go here  
+   - After this section, insert three asterisks  
+   - Example:  
+     [ Chorus, Unified, Ambient chant ]  
+     Line 1  
+     Line 2  
+     *  
+
+3. [ Third song section ]  
+   - Bracket contains formatting cue for Suno AI  
+   - Lyrics can be stylized with cadence  
+   - Echoes or ambient repeats go in parentheses  
+   - Example:  
+     [ Bridge, Infinite, Layered scripture echo ]  
+     I saw the light (shine on me)  
+     The Word was made flesh (flesh, flesh)  
+
+4. [ Outra ]  
+   - Voice type: Low whisper  
+   - Sonic cue: Base only, repeat, fade to silence  
+   - Example:  
+     [ Outra, Low whisper, Base only repeat fade to silence ]  
+     Full of grace and truth  
+     He came unto His own  
+     (unto His own...)  
+
+[ Narration 1: Ambient echo, Soft spoken ]  
+In the beginning God created  
+The heaven and the earth  
+*  
+
+[ Chorus 1: Unified voice, Ambient chant ]  
+In the beginning was the Word  
+And the Word was with God  
+And the Word was God  
+The same was in the beginning with God  
+All things were made by him  
+And without him was not any thing made that was made  
+In him was life  
+And the life was the light of men  
+And the light shineth in darkness  
+And the darkness comprehended it not  
+*  
+
+[ Narration 2: Deep voice, Bass hum ]  
+There was a man sent from God  
+Whose name was John  
+*  
+
+[ V1: Raw flow, Drums kick in, Theatrical swell ]  
+The same came for a witness  
+To bear witness of the Light  
+That all men through him might believe  
+He was not that Light  
+But was sent to bear witness of that Light  
+That was the true Light  
+Which lighteth every man  
+That cometh into the world  
+He was in the world  
+And the world was made by him  
+And the world knew him not  
+He came unto his own  
+And his own received him not  
+But as many as received him  
+To them gave he power  
+To become the sons of God  
+Even to them that believe on his name  
+Which were born, not of blood  
+Nor of the will of the flesh  
+Nor of the will of man  
+But of God  
+And the Word was made flesh  
+And dwelt among us  
+And we beheld his glory  
+The glory as of the only begotten of the Father  
+Full of grace and truth  
+*  
+
+[ Course 1 ]  
+
+[ Narration 3: Infinite voice, Echo chamber ]  
+John bare witness of him, and cried, saying,  
+*  
+
+[ V2: Cipher voice, Minimal percussion ]  
+This was he of whom I spake  
+He that cometh after me is preferred before me  
+For he was before me  
+And of his fulness have all we received  
+And grace for grace  
+For the law was given by Moses  
+But grace and truth came by Jesus Christ  
+No man hath seen God at any time  
+The only begotten Son  
+Which is in the bosom of the Father  
+He hath declared him  
+*  
+
+[ Course 1 ]  
+
+[ Narration 4: Infinite voice, Echo chamber ]  
+And this is the record of John  
+When the Jews sent priests and Levites from Jerusalem to ask him  
+Who art thou?  
+And he confessed  
+*  
+
+[ V3: Cipher voice, Raw cadence, Mid-tempo percussion ]  
+And denied not  
+But confessed, I am not the Christ  
+And they asked him, What then?  
+Art thou Elias?  
+And he saith, I am not  
+Art thou that prophet?  
+And he answered, No  
+Then said they unto him  
+Who art thou?  
+That we may give an answer to them that sent us  
+What sayest thou of thyself?  
+He said, I am the voice of one crying in the wilderness  
+Make straight the way of the Lord  
+As said the prophet Esaias
