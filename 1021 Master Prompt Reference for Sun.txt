@@ -333,3 +333,49 @@ Summary of scope and purpose
 ---
 
 End of update.
+
+### Document update summary
+
+This update captures the session decisions, parsing logic, generation constraints, and operational tokens to attach to the Master Prompt Reference source document.
+
+---
+
+### Core workflow rules
+- Two-step process: Analysis pass first producing statistics, section mapping, and risk flags; wait for explicit user approval (Go) before Generation.  
+- Generation produces a parser-ready prompt only after approval and includes the top-level block, section headers, exact KJV lines (one printed-KJV line per physical prompt line), verification mapping, export mapping, QA checklist, and exact character counts.  
+- Narrative inserts or any non-KJV content are permitted only when the on off switch labeled **lyrics_override** is set to true and an **override_reason** is provided.  
+- Forced changes to canonical KJV lineation or splitting verses across prompt physical lines are permitted only when the on off switch labeled **split_authorization** is set to true; otherwise such changes are flagged and blocked.
+
+---
+
+### Validation and parser rules
+- Per-line rule: each physical lyric line in KJV sections must exact-match the canonical printed‑KJV source; no visible verse numerals in lyrics.  
+- Verification output must map every physical prompt line to its canonical verse reference and list flags: KJV_EXACT, NON_KJV, PARENTHESIS, CROSS_REF, SPLIT_MISMATCH.  
+- Parentheses in lyric text must be detected and flagged as PARENTHESIS and verified against canonical source lineation.  
+- Cross-reference detection must run a match pass against the KJV corpus and surface CROSS_REF warnings (e.g., Genesis 1:1 → John 1 tie).  
+- FX, persona, voice, groove, sonic tokens must be validated against the canonical token libraries; disallowed tokens cause validation failure.
+
+---
+
+### Character-count and split logic
+- Exact character count includes every character: brackets, colons, semicolons, spaces, newlines, and all KJV text.  
+- Threshold: ≤ 5000 characters → single song allowed; > 5000 → automatically generate a split plan into sequential songs where each segment ≤ 5000 and recompute counts per segment.  
+- The Generation output must include the exact total and the final split decision.
+
+---
+
+### Export mapping and studio deliverables
+- Provide track→section mapping, bar→seconds conversion using seconds ≈ bars * 60 / (bpm/4), approximate section durations, stem priorities, mix notes, and suggested session presets as text only.  
+- Document any musical splits or mappings where canonical prompt lines are grouped into musical phrases, annotated as musical_split entries in export mapping while preserving literal prompt lineation unless split_authorization is true.
+
+---
+
+### Implementation notes and examples
+- Verse numerals must be omitted from lyric lines; verse-to-line references appear only in verification mapping.  
+- Narrative sections must be separate section headers (e.g., narrative1) and explicitly require lyrics_override:true.  
+- Provide one short example in the source doc showing a top-level block, a narrative section, a hook section of three KJV lines (no verse numbers in lyrics), and the corresponding verification mapping.  
+- Add explicit guidance: treat Boolean toggles as on off switches; list default on off states used in prior examples (lyrics_override:false; split_authorization:false) and how changing them changes validation behavior.
+
+---
+
+Next step: append this update statement to the Master Prompt Reference file and, when you confirm, I will generate a concise example block for direct insertion into the document.
