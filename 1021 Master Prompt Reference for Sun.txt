@@ -379,3 +379,55 @@ This update captures the session decisions, parsing logic, generation constraint
 ---
 
 Next step: append this update statement to the Master Prompt Reference file and, when you confirm, I will generate a concise example block for direct insertion into the document.
+
+
+
+### Update: Readiness and Generation gating for Analysis → Generation workflow
+
+Summary  
+- Add a mandatory readiness gate before accepting a user "go" for Generation. The system will only prompt the user to reply “go” when all preconditions are satisfied and any blocking issues are clearly listed.
+
+---
+
+### Preconditions that must be satisfied before presenting “go”
+- **KJV verification available**: canonical KJV text for the chapter is present and matches the expected source.  
+- **Character-count threshold defined**: maximum prompt character limit is specified in the document or defaulted.  
+- **Split policy set**: split_authorization true/false must be explicit or defaulted.  
+- **Persona and style parameters set**: persona, BPM range, and stylebox must be declared or defaulted.  
+- **Validation rules present**: required validation checks (bracket syntax, disallowed FX, field order) must be declared.
+
+---
+
+### Readiness messaging (text to display when ready)
+- **READINESS OK — READY FOR GENERATION**  
+- Followed by one-line summary of automatic checks that will run on Generation: **Checks: KJV-exact; character-count; bracket-syntax; split-threshold; disallowed-FX.**
+
+---
+
+### Blocking-message template (text to display when not ready)
+- **NOT READY — GENERATION BLOCKED**  
+- Followed by a short bullet list of unresolved issues from the preconditions, each with an action item:
+  - **Missing KJV source** — attach canonical KJV text or confirm source.  
+  - **Missing character limit** — set max characters for prompts.  
+  - **Split policy unspecified** — set split_authorization true or false.  
+  - **Persona/style unspecified** — choose persona, BPM, stylebox.  
+  - **Validation rules absent** — include validation checklist.
+
+---
+
+### Generation behavior changes
+- If **READINESS OK**, the user prompt asking for “go” appears and the assistant will proceed to Generation immediately when the user replies “go.”  
+- If **NOT READY**, the assistant will not accept “go” and will instead display the blocking-message template; the assistant will require the user to resolve the listed items or explicitly override them before Generation can start.  
+- Any automatic compression or splitting performed during Generation will be **logged inline** and the log will be included in the validation summary.
+
+---
+
+### Logging and transparency
+- Every Generation attempt will produce a short header in the output with: **Readiness status; list of checks run; any compressions applied; exact character counts; split decision**.  
+- Keep the readiness state and last blocking-items at the top of the source document for quick review.
+
+---
+
+### Version note
+- **Change log entry:** "Readiness gating and blocking messages added to Analysis→Generation workflow; explicit preconditions and messaging templates included."  
+- **Version:** update +1 to the master prompt reference version number where you track revisions.
