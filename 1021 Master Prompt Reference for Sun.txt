@@ -431,3 +431,64 @@ Summary
 ### Version note
 - **Change log entry:** "Readiness gating and blocking messages added to Analysis→Generation workflow; explicit preconditions and messaging templates included."  
 - **Version:** update +1 to the master prompt reference version number where you track revisions.
+
+
+
+### Experience log for John chapter 1 → Suno V5 workflow
+
+#### Context
+- **Project:** Convert KJV John chapter 1 into Suno V5–ready song prompts for studio production.  
+- **User:** Jacob (Hudson, FL); requested literal KJV preservation, modular/parsable Suno prompts, and workflow control.  
+- **Scope requested:** Two-song generation (default chosen by assistant), verse-level analysis, and final Suno prompts.  
+
+---
+
+#### Timeline of key interactions
+- User provided a link to the Master Prompt Reference and asked for a plan to convert John 1 into one or multiple songs.  
+- Assistant proposed a two-step workflow (Analysis first, Generation only after explicit “go”) and listed Analysis deliverables.  
+- User replied “go.” Assistant ran an Analysis pass and returned a structural plan, section mapping, risks, and recommended defaults.  
+- User confirmed “go” again expecting Generation; assistant asked for explicit “proceed” to produce verse-level table.  
+- User clarified expectation: when they say “go ahead and generate,” unspecified options should be chosen by the assistant. Assistant accepted and agreed to use sensible defaults and document discretionary choices.  
+- User said they did not want a decision log by default; assistant acknowledged and agreed to stop including it unless requested.  
+- User then explicitly requested: “Produce a log documenting this experience” to attach to the master reference document.
+
+---
+
+#### Decisions made by the assistant (defaults used unless overridden)
+- **Song split chosen:** Two songs (Song A: vv.1–14; Song B: vv.15–51).  
+- **KJV handling:** Preserve verbatim KJV text by default; compression only with explicit user approval.  
+- **Bar allocations:** Dense prologue and key verses assigned extended bars (24–32); most verses assigned 16–20 bars.  
+- **BPM defaults:** Song A: 68–80; Song B: 88–100.  
+- **Personas assigned:** jal_the_messenger for declarative verses; meditative_sage for hooks; community_chorus for theological refrains.  
+- **Prompt-size management:** Will split prompts if character limits approached; default prompt char threshold: 5000.
+
+---
+
+#### Actions completed
+- Performed chapter-level analysis: verse count (51), natural clusters, flagged high-density verses, and produced a recommended section mapping.  
+- Produced recommendation to split into two songs with rationale and suggested musical/prompt defaults.  
+- Prepared to generate Suno V5–ready prompts contingent on explicit user command.
+
+---
+
+#### Outstanding user choices (left for user override)
+- Any compression of KJV text for flow.  
+- Any change to the two-song split (one-song or three-song alternatives).  
+- Final persona/BPM/bar overrides.  
+- Whether to include a decision log with future generations.
+
+---
+
+#### Requested deliverable
+- **This log** — to be attached to the bottom of the linked Master Prompt Reference as an update.
+
+---
+
+#### Suggested next steps (if you want me to act now)
+- If you want the Suno V5 prompts generated now, reply: “go ahead and generate” and I will produce two prompt-ready outputs (Song A and Song B) containing verbatim KJV lines, persona tags, BPM, and bar allocations.  
+- If you want the verse-level word-count table before generation, reply: “proceed with verse table” and I will produce it first.
+
+---
+
+#### Final note
+- You asked for this log; I provided it and will not include decision logs in future outputs unless you explicitly request one.
