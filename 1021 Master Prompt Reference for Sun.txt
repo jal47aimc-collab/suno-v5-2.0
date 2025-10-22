@@ -268,3 +268,68 @@ Updates.
 • 	Bracket format: single-line top-level metadata; single-line section headers; lyrics placed outside brackets.
 • 	Delimiters: commas used for lists, semicolons preserved inside KJV lines only.
 • 	Source: all Bible text pulled only from King James Bible Online link included in metadata.
+
+### Session update for master prompt reference
+
+Summary of scope and purpose  
+- Produce studio-ready song prompts that use KJV scripture verbatim, include bracketed metadata headers per song section, and fit within a strict character limit for model ingestion.  
+- Metadata and lyrics together define the final prompt whose exact character count governs whether a chapter stays single-song or is split into sequential songs.
+
+---
+
+### Fixed formatting rules to apply going forward
+
+- Use a single bracketed metadata header per section with this minimal pattern:  
+  [sectionRole: voice: sonic; instrumentation]  
+- Do not use underscores, pipes, or invented tokens. Use single words or space-separated phrases inside metadata (e.g., close lead vocal; slight tape warmth).  
+- Place KJV lines verbatim immediately after the bracket header, one KJV line per physical line. No extra text, annotations, or added words inside lyric lines.  
+- Top-level blocks allowed: [studio: ...] and [subgenre: ...] when needed; these count toward total characters.  
+- No persona tags, ad-hoc shorthand, or non‑document tokens unless present in the master prompt reference.
+
+---
+
+### Character-count and splitting logic
+
+- Final-prompt character count = every character in the exact text to be sent (all brackets, colons, semicolons, spaces, newlines, and KJV lines).  
+- Threshold: ≤ 5000 characters → single song output. > 5000 → split chapter into sequential songs labeled first song section, second song section, etc., and recompute counts per resulting prompt so each segment ≤ 5000.  
+- Always compute and return the exact total after producing the formatted prompt text.
+
+---
+
+### Song-section semantics and minimal vocab
+
+- Required sectionRole values to use explicitly when applicable: intro, V1, V2, chorus, bridge, hook, outro, first song section, second song section, etc.  
+- Each section header must be human- and machine-parseable: sectionRole appears first, then voice, then sonic, then instrumentation separated by a semicolon. Example:  
+  [V1: close lead vocal: slight tape warmth; upright bass]  
+- If a section has no lyrics, include the header alone (no blank-line lyric placeholder). If it has lyrics, place them immediately following the header.
+
+---
+
+### Validation and compatibility checks
+
+- To validate downstream model parsing, provide a one-shot test prompt that asks the target model to parse a single bracket header and return a minimal JSON object. Use the simplified header pattern above.  
+- If downstream fails, produce a preprocessor that converts our headers to the model’s accepted format; record that conversion mapping in the master prompt reference.  
+- Always include the exact formatted prompt plus the exact character count so compatibility can be rerun deterministically.
+
+---
+
+### Deliverables to attach to the master prompt reference
+
+- The canonical header pattern and example for each sectionRole (compact list).  
+- Character-count algorithm (exact: include newlines as characters) with one worked example using a short chapter.  
+- Split logic rules and labeling convention for multi-song chapters.  
+- Validation test prompt (single header → JSON) and expected JSON schema.  
+- Style prohibitions: no underscores; no pipes; no invented persona tokens; no added scripture text; no inline commentary in outputs.
+
+---
+
+### Next use instructions (how I will behave in new sessions)
+
+- I will generate only the canonical bracket headers and KJV lines verbatim, formatted exactly as specified.  
+- I will compute and return the exact character count for the complete prompt and split if necessary.  
+- I will not invent formatting, tokens, or separators not documented here.  
+- I will include the validation test when requested to confirm downstream parsing.
+
+---
+
+End of update.
